@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D5D525D1A71210F00BA4AB6 /* AsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5D525C1A71210F00BA4AB6 /* AsyncImageView.m */; };
+		1D5D52601A7199D900BA4AB6 /* HotelDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5D525F1A7199D900BA4AB6 /* HotelDetails.m */; };
+		1D5D52631A726B7900BA4AB6 /* HotelInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5D52621A726B7900BA4AB6 /* HotelInfoVC.m */; };
+		1D8354841A6F214E00F97789 /* Hotel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D8354831A6F214E00F97789 /* Hotel.m */; };
+		1DEE52431A6F17FB00FA059C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEE52421A6F17FB00FA059C /* main.m */; };
+		1DEE52461A6F17FB00FA059C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEE52451A6F17FB00FA059C /* AppDelegate.m */; };
+		1DEE52511A6F17FB00FA059C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DEE524F1A6F17FB00FA059C /* LaunchScreen.xib */; };
+		1DEE525D1A6F17FB00FA059C /* HTSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEE525C1A6F17FB00FA059C /* HTSTests.m */; };
+		1DEE52681A6F181A00FA059C /* HotelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEE52671A6F181A00FA059C /* HotelCell.m */; };
+		1DEE526A1A6F182D00FA059C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DEE52691A6F182D00FA059C /* Main.storyboard */; };
+		1DEE526D1A6F183B00FA059C /* MainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEE526C1A6F183B00FA059C /* MainVC.m */; };
+		1DEE526F1A6F186300FA059C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DEE526E1A6F186300FA059C /* Images.xcassets */; };
+		BA23B73833C0CD0969D41D58 /* libPods-CleverPumpkins.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADFE7B60237B1821708C89D1 /* libPods-CleverPumpkins.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1DEE52571A6F17FB00FA059C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1DEE52351A6F17FB00FA059C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1DEE523C1A6F17FB00FA059C;
+			remoteInfo = CleverPumpkins;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D5D525B1A71210800BA4AB6 /* AsyncImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AsyncImageView.h; sourceTree = "<group>"; };
+		1D5D525C1A71210F00BA4AB6 /* AsyncImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncImageView.m; sourceTree = "<group>"; };
+		1D5D525E1A7199D900BA4AB6 /* HotelDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelDetails.h; sourceTree = "<group>"; };
+		1D5D525F1A7199D900BA4AB6 /* HotelDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelDetails.m; sourceTree = "<group>"; };
+		1D5D52611A726B7900BA4AB6 /* HotelInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelInfoVC.h; sourceTree = "<group>"; };
+		1D5D52621A726B7900BA4AB6 /* HotelInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelInfoVC.m; sourceTree = "<group>"; };
+		1D8354821A6F214E00F97789 /* Hotel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hotel.h; sourceTree = "<group>"; };
+		1D8354831A6F214E00F97789 /* Hotel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hotel.m; sourceTree = "<group>"; };
+		1DEE523D1A6F17FB00FA059C /* CleverPumpkins.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleverPumpkins.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DEE52411A6F17FB00FA059C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DEE52421A6F17FB00FA059C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1DEE52441A6F17FB00FA059C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1DEE52451A6F17FB00FA059C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1DEE52501A6F17FB00FA059C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		1DEE52561A6F17FB00FA059C /* CleverPumpkinsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleverPumpkinsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DEE525B1A6F17FB00FA059C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DEE525C1A6F17FB00FA059C /* HTSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTSTests.m; sourceTree = "<group>"; };
+		1DEE52661A6F181A00FA059C /* HotelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelCell.h; sourceTree = "<group>"; };
+		1DEE52671A6F181A00FA059C /* HotelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelCell.m; sourceTree = "<group>"; };
+		1DEE52691A6F182D00FA059C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		1DEE526B1A6F183B00FA059C /* MainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainVC.h; sourceTree = "<group>"; };
+		1DEE526C1A6F183B00FA059C /* MainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainVC.m; sourceTree = "<group>"; };
+		1DEE526E1A6F186300FA059C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3E03F9C1CD64BDFCB219738D /* Pods-CleverPumpkins.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleverPumpkins.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CleverPumpkins/Pods-CleverPumpkins.debug.xcconfig"; sourceTree = "<group>"; };
+		55D16415CF7AE6CEA5FE94AC /* Pods-CleverPumpkins.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleverPumpkins.release.xcconfig"; path = "Pods/Target Support Files/Pods-CleverPumpkins/Pods-CleverPumpkins.release.xcconfig"; sourceTree = "<group>"; };
+		ADFE7B60237B1821708C89D1 /* libPods-CleverPumpkins.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CleverPumpkins.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1DEE523A1A6F17FB00FA059C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA23B73833C0CD0969D41D58 /* libPods-CleverPumpkins.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DEE52531A6F17FB00FA059C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D5D52671A72B09300BA4AB6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1D8354821A6F214E00F97789 /* Hotel.h */,
+				1D8354831A6F214E00F97789 /* Hotel.m */,
+				1D5D525E1A7199D900BA4AB6 /* HotelDetails.h */,
+				1D5D525F1A7199D900BA4AB6 /* HotelDetails.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1D5D52681A72B0B400BA4AB6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1D5D525B1A71210800BA4AB6 /* AsyncImageView.h */,
+				1D5D525C1A71210F00BA4AB6 /* AsyncImageView.m */,
+				1DEE52661A6F181A00FA059C /* HotelCell.h */,
+				1DEE52671A6F181A00FA059C /* HotelCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		1D5D52691A72B0C400BA4AB6 /* ViewCotrollers */ = {
+			isa = PBXGroup;
+			children = (
+				1DEE526B1A6F183B00FA059C /* MainVC.h */,
+				1DEE526C1A6F183B00FA059C /* MainVC.m */,
+				1D5D52611A726B7900BA4AB6 /* HotelInfoVC.h */,
+				1D5D52621A726B7900BA4AB6 /* HotelInfoVC.m */,
+			);
+			name = ViewCotrollers;
+			sourceTree = "<group>";
+		};
+		1DEE52341A6F17FB00FA059C = {
+			isa = PBXGroup;
+			children = (
+				1DEE523F1A6F17FB00FA059C /* HTS */,
+				1DEE52591A6F17FB00FA059C /* HTSTests */,
+				1DEE523E1A6F17FB00FA059C /* Products */,
+				EC42AC2CEA2B5CD9E60F4A97 /* Pods */,
+				43AA7CB68B3479166C991330 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1DEE523E1A6F17FB00FA059C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1DEE523D1A6F17FB00FA059C /* CleverPumpkins.app */,
+				1DEE52561A6F17FB00FA059C /* CleverPumpkinsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1DEE523F1A6F17FB00FA059C /* HTS */ = {
+			isa = PBXGroup;
+			children = (
+				1D5D52681A72B0B400BA4AB6 /* Views */,
+				1D5D52691A72B0C400BA4AB6 /* ViewCotrollers */,
+				1D5D52671A72B09300BA4AB6 /* Model */,
+				1DEE52691A6F182D00FA059C /* Main.storyboard */,
+				1DEE524F1A6F17FB00FA059C /* LaunchScreen.xib */,
+				1DEE526E1A6F186300FA059C /* Images.xcassets */,
+				1DEE52401A6F17FB00FA059C /* Supporting Files */,
+			);
+			name = HTS;
+			path = CleverPumpkins;
+			sourceTree = "<group>";
+		};
+		1DEE52401A6F17FB00FA059C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1DEE52441A6F17FB00FA059C /* AppDelegate.h */,
+				1DEE52451A6F17FB00FA059C /* AppDelegate.m */,
+				1DEE52411A6F17FB00FA059C /* Info.plist */,
+				1DEE52421A6F17FB00FA059C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1DEE52591A6F17FB00FA059C /* HTSTests */ = {
+			isa = PBXGroup;
+			children = (
+				1DEE525C1A6F17FB00FA059C /* HTSTests.m */,
+				1DEE525A1A6F17FB00FA059C /* Supporting Files */,
+			);
+			name = HTSTests;
+			path = CleverPumpkinsTests;
+			sourceTree = "<group>";
+		};
+		1DEE525A1A6F17FB00FA059C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1DEE525B1A6F17FB00FA059C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		43AA7CB68B3479166C991330 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADFE7B60237B1821708C89D1 /* libPods-CleverPumpkins.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC42AC2CEA2B5CD9E60F4A97 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E03F9C1CD64BDFCB219738D /* Pods-CleverPumpkins.debug.xcconfig */,
+				55D16415CF7AE6CEA5FE94AC /* Pods-CleverPumpkins.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1DEE523C1A6F17FB00FA059C /* CleverPumpkins */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEE52601A6F17FB00FA059C /* Build configuration list for PBXNativeTarget "CleverPumpkins" */;
+			buildPhases = (
+				4CD436CA247B7BB466168D37 /* Check Pods Manifest.lock */,
+				1DEE52391A6F17FB00FA059C /* Sources */,
+				1DEE523A1A6F17FB00FA059C /* Frameworks */,
+				1DEE523B1A6F17FB00FA059C /* Resources */,
+				2E1CEEB93E834388FF376B5B /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CleverPumpkins;
+			productName = CleverPumpkins;
+			productReference = 1DEE523D1A6F17FB00FA059C /* CleverPumpkins.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1DEE52551A6F17FB00FA059C /* CleverPumpkinsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEE52631A6F17FB00FA059C /* Build configuration list for PBXNativeTarget "CleverPumpkinsTests" */;
+			buildPhases = (
+				1DEE52521A6F17FB00FA059C /* Sources */,
+				1DEE52531A6F17FB00FA059C /* Frameworks */,
+				1DEE52541A6F17FB00FA059C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1DEE52581A6F17FB00FA059C /* PBXTargetDependency */,
+			);
+			name = CleverPumpkinsTests;
+			productName = CleverPumpkinsTests;
+			productReference = 1DEE52561A6F17FB00FA059C /* CleverPumpkinsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1DEE52351A6F17FB00FA059C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = me;
+				TargetAttributes = {
+					1DEE523C1A6F17FB00FA059C = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					1DEE52551A6F17FB00FA059C = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 1DEE523C1A6F17FB00FA059C;
+					};
+				};
+			};
+			buildConfigurationList = 1DEE52381A6F17FB00FA059C /* Build configuration list for PBXProject "CleverPumpkins" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1DEE52341A6F17FB00FA059C;
+			productRefGroup = 1DEE523E1A6F17FB00FA059C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1DEE523C1A6F17FB00FA059C /* CleverPumpkins */,
+				1DEE52551A6F17FB00FA059C /* CleverPumpkinsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1DEE523B1A6F17FB00FA059C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DEE526F1A6F186300FA059C /* Images.xcassets in Resources */,
+				1DEE526A1A6F182D00FA059C /* Main.storyboard in Resources */,
+				1DEE52511A6F17FB00FA059C /* LaunchScreen.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DEE52541A6F17FB00FA059C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E1CEEB93E834388FF376B5B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CleverPumpkins/Pods-CleverPumpkins-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4CD436CA247B7BB466168D37 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1DEE52391A6F17FB00FA059C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D8354841A6F214E00F97789 /* Hotel.m in Sources */,
+				1DEE52461A6F17FB00FA059C /* AppDelegate.m in Sources */,
+				1D5D52631A726B7900BA4AB6 /* HotelInfoVC.m in Sources */,
+				1D5D52601A7199D900BA4AB6 /* HotelDetails.m in Sources */,
+				1DEE52681A6F181A00FA059C /* HotelCell.m in Sources */,
+				1DEE526D1A6F183B00FA059C /* MainVC.m in Sources */,
+				1DEE52431A6F17FB00FA059C /* main.m in Sources */,
+				1D5D525D1A71210F00BA4AB6 /* AsyncImageView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DEE52521A6F17FB00FA059C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DEE525D1A6F17FB00FA059C /* HTSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1DEE52581A6F17FB00FA059C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1DEE523C1A6F17FB00FA059C /* CleverPumpkins */;
+			targetProxy = 1DEE52571A6F17FB00FA059C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1DEE524F1A6F17FB00FA059C /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DEE52501A6F17FB00FA059C /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DEE525E1A6F17FB00FA059C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1DEE525F1A6F17FB00FA059C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1DEE52611A6F17FB00FA059C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E03F9C1CD64BDFCB219738D /* Pods-CleverPumpkins.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CleverPumpkins/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = CleverPumpkins;
+			};
+			name = Debug;
+		};
+		1DEE52621A6F17FB00FA059C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55D16415CF7AE6CEA5FE94AC /* Pods-CleverPumpkins.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CleverPumpkins/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = CleverPumpkins;
+			};
+			name = Release;
+		};
+		1DEE52641A6F17FB00FA059C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CleverPumpkinsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = CleverPumpkinsTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CleverPumpkins.app/CleverPumpkins";
+			};
+			name = Debug;
+		};
+		1DEE52651A6F17FB00FA059C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CleverPumpkinsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = CleverPumpkinsTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CleverPumpkins.app/CleverPumpkins";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEE52381A6F17FB00FA059C /* Build configuration list for PBXProject "CleverPumpkins" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEE525E1A6F17FB00FA059C /* Debug */,
+				1DEE525F1A6F17FB00FA059C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEE52601A6F17FB00FA059C /* Build configuration list for PBXNativeTarget "CleverPumpkins" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEE52611A6F17FB00FA059C /* Debug */,
+				1DEE52621A6F17FB00FA059C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEE52631A6F17FB00FA059C /* Build configuration list for PBXNativeTarget "CleverPumpkinsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEE52641A6F17FB00FA059C /* Debug */,
+				1DEE52651A6F17FB00FA059C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1DEE52351A6F17FB00FA059C /* Project object */;
+}
