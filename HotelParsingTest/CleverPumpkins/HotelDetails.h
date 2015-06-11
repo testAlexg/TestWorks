@@ -12,8 +12,8 @@
 @property (nonatomic, strong) NSString *id;
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *address;
-@property (nonatomic, strong) NSString *stars;
-@property (nonatomic, strong) NSString *distance;
+@property (nonatomic, strong) NSNumber *stars;
+@property (nonatomic, strong) NSNumber *distance;
 @property (nonatomic, strong) NSString *image;
 @property (nonatomic, strong) NSNumber *suites_availability;
 @property (nonatomic, strong) NSNumber *lat;

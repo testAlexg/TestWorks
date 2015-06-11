@@ -125,10 +125,11 @@ NSString *const AsyncImageErrorKey = @"error";
                                                                 AsyncImageErrorKey: error}];
   
 }
+
 - (void)cropImage:(UIImage *)originalImage
 
 {
-    NSLog(@"original image orientation:%d",originalImage.imageOrientation);
+   // NSLog(@"original image orientation:%d",originalImage.imageOrientation);
     
     //calculate scale factor to go between cropframe and original image
     float SF = originalImage.size.width / originalImage.size.width;

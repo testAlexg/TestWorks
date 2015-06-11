@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "DataManager.h"
 
 @interface AppDelegate ()
 
@@ -17,7 +18,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    [[DataManager sharedInstance]configureRestKit];
+
     return YES;
 }
 

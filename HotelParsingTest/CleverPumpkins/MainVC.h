@@ -2,9 +2,8 @@
 #import <UIKit/UIKit.h>
 #import "HotelInfoVC.h"
 
-@interface MainVC : UIViewController<
+NSString *const NloadHotel = @"loaded";
 
-
-UITableViewDataSource, UITableViewDelegate>
+@interface MainVC : UIViewController < UITableViewDataSource, UITableViewDelegate>
 
 @end

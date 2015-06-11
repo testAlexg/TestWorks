@@ -2,11 +2,11 @@
 
 #import "MainVC.h"
 #import <QuartzCore/QuartzCore.h>
-#import <RestKit.h>
 #import "Hotel.h"
 #import "HotelCell.h"
 #import "AsyncImageView.h"
 #import "HotelDetails.h"
+#import "DataManager.h"
 
 @interface MainVC ()
 
@@ -26,79 +26,32 @@
 
 @implementation MainVC
 
+
 - (void)viewDidLoad
 {
     indicator.hidden = YES;
     doNotWant = [NSCharacterSet characterSetWithCharactersInString:@":"];
     [super viewDidLoad];
-    [self configureRestKit];
-   
-}
-
-- (void)configureRestKit
-
-{
     
-    // initialize AFNetworking HTTPClient
-    NSURL *baseURL = [NSURL URLWithString:@"https://dl.dropboxusercontent.com"];
-    AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:baseURL];
-    
-    // initialize RestKit
-    RKObjectManager *objectManager = [[RKObjectManager alloc] initWithHTTPClient:client];
-    
-    // setup object mappings
-    RKObjectMapping *hotelMapping = [RKObjectMapping mappingForClass:[Hotel class]];
-    
-    [hotelMapping addAttributeMappingsFromArray:@[@"id", @"name", @"address", @"stars",@"distance", @"suites_availability"]];
-        // register mappings with the provider using a response descriptor
-   RKResponseDescriptor *hotelDescriptor = [RKResponseDescriptor responseDescriptorWithMapping:hotelMapping
-                                                 method:RKRequestMethodGET
-                                            pathPattern:nil
-                                                keyPath:nil
-                                            statusCodes:[NSIndexSet indexSetWithIndex:200]];
-    [objectManager addResponseDescriptor:hotelDescriptor];
-
-
-}
-
-
-- (void)loadHotels
-
-{
-
-        [RKMIMETypeSerialization registerClass:[RKNSJSONSerialization class] forMIMEType:@"text/plain"];
-
-        [[RKObjectManager sharedManager] getObjectsAtPath:@"/u/109052005/1/0777.json"
-                                               parameters:nil
-                                                  success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult)
-    {
-                                                     hotels = mappingResult.array;
-                                                     
-                                                      [loadButton  setEnabled:YES];
-                                                     [indicator stopAnimating];
-                                                     indicator.hidden = YES;
-                                                     [myTable reloadData];
-                                                     
-    }
-                                                  failure:^(RKObjectRequestOperation *operation, NSError *error)
-         {
-                                                      NSLog(@"What do you mean by 'there is no hotels': %@", error);
-             
-         }];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleHotel:) name:NloadHotel object:nil];
     
 }
-
 
 -(void)sortbyFloat
 
+
 {
     
-    NSSortDescriptor *aSortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"distance" ascending:YES comparator:^(id obj1, id obj2) {
+    NSSortDescriptor *aSortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"distance" ascending:YES comparator:^(id obj1, id obj2)
+    
+    {
         
-        if ([obj1 floatValue] > [obj2 floatValue]) {
+        if ([obj1 floatValue] > [obj2 floatValue])
+        {
             return (NSComparisonResult)NSOrderedDescending;
         }
-        if ([obj1 floatValue] < [obj2 floatValue]) {
+        if ([obj1 floatValue] < [obj2 floatValue])
+        {
             return (NSComparisonResult)NSOrderedAscending;
         }
         return (NSComparisonResult)NSOrderedSame;
@@ -133,7 +86,7 @@
 - (IBAction)buttonPressed:(id)sender
 {
     [loadButton  setEnabled:NO];
-     [self loadHotels];
+    [[DataManager sharedInstance]loadHotels];
     indicator.hidden = NO;
     [indicator startAnimating];
 }
@@ -162,9 +115,12 @@
        Hotel *hotel = hotels[indexPath.row];
        cell.hotelName.text = hotel.name;
        cell.hotelAddress.text = hotel.address;
-       cell.hotelStars.text = hotel.stars;
-       cell.distanceToHotel.text = hotel.distance;
-       if(doNotWant){
+       cell.hotelStars.text = [NSString stringWithFormat:@"%@",hotel.stars];
+       cell.distanceToHotel.text = [NSString stringWithFormat:@"%@",hotel.distance] ;
+    
+    if(doNotWant)
+        
+    {
        cell.suitesAvailability.text = [[hotel.suites_availability componentsSeparatedByCharactersInSet:doNotWant]
                                        componentsJoinedByString: @", "];;
     }
@@ -175,8 +131,8 @@
 
 {
     
-  
     hotelID = [hotels[indexPath.row] valueForKey:@"id"];
+    
     [self performSegueWithIdentifier:@"gotodetails" sender:self];
     
 }
@@ -184,12 +140,14 @@
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 
 {
-   
+
     if ([segue.identifier isEqualToString:@"gotodetails"])
-    {
+        {
+            
     HotelInfoVC *hvc =  [segue destinationViewController];
     hvc.hotel  = hotelID;
-    }
+    
+        }
     
 }
 
@@ -212,6 +170,23 @@
             break;
     }
     
+}
+
+
+-(void)handleHotel:(NSNotification*)notification
+
+{
+    if([notification.name isEqualToString:NloadHotel])
+    {
+    if (!hotels)
+      hotels = notification.object;
+    }
+   
+    [loadButton  setEnabled:YES];
+    [indicator stopAnimating];
+    indicator.hidden = YES;
+    [myTable reloadData];
+
 }
 
 

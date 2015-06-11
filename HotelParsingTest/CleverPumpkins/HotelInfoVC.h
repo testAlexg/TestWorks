@@ -13,4 +13,5 @@
 @interface HotelInfoVC : UIViewController
 
 @property(nonatomic, strong) NSString *hotel;
+
 @end

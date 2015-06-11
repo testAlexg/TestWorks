@@ -33,24 +33,25 @@
 {
     
     [super viewDidLoad];
-    [self getSingleHotelInfo:_hotel];
     
+    [self getSingleHotelInfo:_hotel];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setPlaseholderImage) name:AsyncImageLoadDidFail object:nil];
     
     
 }
 
+
 -(void)reloadView
 
 {
     
-    stars.text = hoteldetails.stars;
+    stars.text = [NSString stringWithFormat:@"%@",hoteldetails.stars];
     address.text = hoteldetails.address;
-    distance.text = hoteldetails.distance;
+    distance.text = [NSString stringWithFormat:@"%@",hoteldetails.distance];
     
     suites.text = [NSString stringWithFormat:@"%@",hoteldetails.suites_availability];
+   
     NSURL *picUrl = [NSURL URLWithString:[NSString stringWithFormat:@"https://dl.dropboxusercontent.com/u/109052005/1/%@",hoteldetails.image]];
-   // NSLog(@"PICURL %@",picUrl);
     
     [hotelPic setImageURL:picUrl];
     
@@ -86,6 +87,7 @@
     RKResponseDescriptor *responseDescriptor = [RKResponseDescriptor responseDescriptorWithMapping:mapping method:RKRequestMethodAny pathPattern:nil keyPath:nil statusCodes:statusCodes];
     
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"https://dl.dropboxusercontent.com/u/109052005/1/%@.json", hotel]];
+    
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     
     RKObjectRequestOperation *operation = [[RKObjectRequestOperation alloc] initWithRequest:request responseDescriptors:@[responseDescriptor]];

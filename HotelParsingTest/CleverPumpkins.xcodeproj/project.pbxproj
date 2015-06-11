@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D1390E51B29AF1000C35C4F /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D1390E41B29AF1000C35C4F /* DataManager.m */; };
 		1D5D525D1A71210F00BA4AB6 /* AsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5D525C1A71210F00BA4AB6 /* AsyncImageView.m */; };
 		1D5D52601A7199D900BA4AB6 /* HotelDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5D525F1A7199D900BA4AB6 /* HotelDetails.m */; };
 		1D5D52631A726B7900BA4AB6 /* HotelInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5D52621A726B7900BA4AB6 /* HotelInfoVC.m */; };
@@ -33,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D1390E31B29AF1000C35C4F /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		1D1390E41B29AF1000C35C4F /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
 		1D5D525B1A71210800BA4AB6 /* AsyncImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AsyncImageView.h; sourceTree = "<group>"; };
 		1D5D525C1A71210F00BA4AB6 /* AsyncImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncImageView.m; sourceTree = "<group>"; };
 		1D5D525E1A7199D900BA4AB6 /* HotelDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelDetails.h; sourceTree = "<group>"; };
@@ -80,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D1390E61B29B00C00C35C4F /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				1D1390E31B29AF1000C35C4F /* DataManager.h */,
+				1D1390E41B29AF1000C35C4F /* DataManager.m */,
+			);
+			name = DataManager;
+			sourceTree = "<group>";
+		};
 		1D5D52671A72B09300BA4AB6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +148,7 @@
 		1DEE523F1A6F17FB00FA059C /* HTS */ = {
 			isa = PBXGroup;
 			children = (
+				1D1390E61B29B00C00C35C4F /* DataManager */,
 				1D5D52681A72B0B400BA4AB6 /* Views */,
 				1D5D52691A72B0C400BA4AB6 /* ViewCotrollers */,
 				1D5D52671A72B09300BA4AB6 /* Model */,
@@ -336,6 +349,7 @@
 				1DEE52681A6F181A00FA059C /* HotelCell.m in Sources */,
 				1DEE526D1A6F183B00FA059C /* MainVC.m in Sources */,
 				1DEE52431A6F17FB00FA059C /* main.m in Sources */,
+				1D1390E51B29AF1000C35C4F /* DataManager.m in Sources */,
 				1D5D525D1A71210F00BA4AB6 /* AsyncImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

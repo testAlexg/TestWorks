@@ -12,12 +12,11 @@
 
 @interface Hotel : NSObject
 
-
 @property (nonatomic, strong) NSString *id;
 @property (nonatomic, strong) NSString *name;
-@property (nonatomic, strong) NSString *stars;
+@property (nonatomic, strong) NSNumber *stars;
 @property (nonatomic, strong) NSString *address;
-@property (nonatomic, strong) NSString *distance;
+@property (nonatomic, strong) NSNumber *distance;
 @property (nonatomic, strong) NSString *suites_availability;
 
 @end
